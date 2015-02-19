@@ -35,7 +35,7 @@ server {
 }
 
 server {
-    listen 80:
+    listen 80;
     server_name ${configuration:additional-names};
     location / {
         return 301 http://configuration:server-name};
